@@ -24,7 +24,7 @@ body {
 	left: 0;
 	top: 0;
 	width: 200px;
-	height: 100%;
+	height: 100vh;  /* Full viewport height */
 	background-color: var(--primary-color);	/* French Colonial Blue */
 	padding-top: 20px;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -34,6 +34,11 @@ body {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+}
+
+.sidebar ul li {
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .sidebar ul li a {
@@ -94,7 +99,6 @@ section {
 	padding: 40px 20px;
 }
 
-
 footer {
 	text-align: center;
 	padding: 20px;
@@ -140,27 +144,6 @@ footer {
 	border-radius: 50%;	/* Make sure the image remains circular */
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-	.about-content {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-
-	.photo {
-		text-align: center;
-	}
-
-	.photo img {
-		max-width: 200px;
-	}
-
-	.content {
-		margin-left: 120px;
-	}
-}
-
 /* Skills Section Styling */
 .skills {
 	padding: 50px;
@@ -177,7 +160,7 @@ footer {
 /* Skills Grid */
 .skills-grid {
 	display: flex;
-	justify-content: center;
+	justify-content: center; /* Center the grid */
 	gap: 20px;
 	flex-wrap: wrap;
 }
@@ -270,3 +253,4 @@ a:hover {
 		grid-template-columns: 1fr;
 	}
 }
+
