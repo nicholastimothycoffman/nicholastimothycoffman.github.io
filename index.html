@@ -4,34 +4,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Portfolio</title>
-
-	<!-- Your CSS file -->
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Welcome to My Portfolio</h1>
-		<p>Welcome! I'm Nick Coffman.</p>
-	</header>
+	<!-- Sidebar Navigation -->
+	<nav class="sidebar">
+		<ul>
+			<li><a href="#about"><i class="icon">🏠</i>About</a></li>
+            		<li><a href="#skills"><i class="icon">💻</i>Skills</a></li>
+            		<li><a href="#projects"><i class="icon">📁</i>Projects</a></li>
+            		<li><a href="#resume"><i class="icon">📄</i>Resume</a></li>
+            		<li><a href="#contact"><i class="icon">✉️</i>Contact</a></li>
+		</ul>
+	</nav>
 
-	<section class="about">
-		<div class="about-content">
-			<div class="bio">
-				<h2>About</h2>
-				<p>
-				  Based in Austin, TX. My passions are manifold and varied.
-				  I love to adopt an outside-the-box, novel attitude attitude
-				  and approach in order to discover unique solutions.
-				  I treat my projects with great care and attention to detail.
-				  It would be a delight and a priviledge to help you with
-				  yours!
-				</p>
+	<!-- Main content of the website -->
+	<div class="content">
+		<header>
+			<h1>Welcome to My Portfolio</h1>
+			<p>Welcome! I'm Nick Coffman.</p>
+		</header>
+
+		<section id="about" class="about">
+			<div class="about-content">
+				<div class="bio">
+					<h2>About</h2>
+					<p>
+					Based in Austin, TX. My passions are manifold and varied.
+					I love to adopt an outside-the-box, novel attitude
+					and approach in order to discover unique solutions.
+					I treat my projects with great care and attention to detail.
+					It would be a delight and a privilege to help you with
+					yours!
+					</p>
+				</div>
+				<div class="photo">
+					<img src="images/Nick_Oval.png">
+				</div>
 			</div>
-			<div class="photo">
-				<img src="images/Nick_Oval.png" alt="Nick Coffman">
-			</div>
-		</div>
-	</section>
+		</section>
 				  	
 	<section class="skills">
 		<h2>Skills</h2>

@@ -18,6 +18,63 @@ body {
 	padding: 0;
 }
 
+/* Sidebar Navigation */
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 100%;
+	background-color: var(--primary-color);	/* French Colonial Blue */
+	padding-top: 20px;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--white-color);	/* White text */
+	padding: 10px 0;
+	display: block;
+	transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+	background-color: var(--dark-gray);	/* Dark gray on hover */
+}
+
+.icon {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.content {
+	margin-left: 220px;	/* Ensure content doesn't overlap with the sidebar */
+	padding: 20px;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+	.sidebar {
+		width: 100px;
+	}
+
+	.content {
+		margin-left: 120px;
+	}
+
+	.sidebar ul li a {
+		font-size: 14px;
+	}
+}
+
 /* Headers */
 h1, h2, h3 {
 	font-family: 'Bodoni 72 Oldstyle', serif;
@@ -72,16 +129,22 @@ footer {
 	line-height: 1.6;
 }
 
+.photo {
+	flex: 1;
+	text-align: right;
+}
+
 .photo img {
-	max-width: 300px;	/* Limit the image size */
+	max-width: 300px;	/* Adjust to your preference */
 	width: 100%;
-	border-radius: 8px;	/* Optional: Add a rounded border */
+	border-radius: 50%;	/* Make sure the image remains circular */
+}
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
 	.about-content {
 		flex-direction: column;
-		alight-items: center;
+		align-items: center;
 		text-align: center;
 	}
 
@@ -91,6 +154,10 @@ footer {
 
 	.photo img {
 		max-width: 200px;
+	}
+
+	.content {
+		margin-left: 120px;
 	}
 }
 
