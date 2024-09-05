@@ -83,10 +83,15 @@ body {
 }
 
 /* Headers */
-h1, h2, h3 {
+h1, h3 {
 	font-family: 'Bodoni 72 Oldstyle', serif;
 	color: var(--primary-color);		/* French Colonial Blue for headings */
 	margin-bottom: 15px;
+}
+
+h2 {
+	font-family: 'Bodoni 72 Oldstyle', serif;
+	color: var(--white-color);
 }
 
 /* Layout and Spacing */
@@ -131,7 +136,7 @@ footer {
 
 .bio p {
 	color: var(--dark-gray);	/* Dark gray for the bio text */
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.6;
 }
 
