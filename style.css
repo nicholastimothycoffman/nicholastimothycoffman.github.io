@@ -1,6 +1,6 @@
 /* Font Styling */
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: #f4f4f4;
 	color: #333;
 	line-height: 1.6;
@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: 'Merriweather', serif;
+	font-family: 'Bodoni 72 Oldstyle', serif;
 	color: #2c3e50;
 	margin-bottom: 15px;
 }
