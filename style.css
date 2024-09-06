@@ -1,4 +1,4 @@
-/* General Colors */
+/* ========== Color Variables ========== */
 :root {
 	--primary-color: #6E7F80;		/* French Colonial Blue */
 	--white-color: #FFFFFF;
@@ -8,7 +8,7 @@
 	--dark-gray: #333333;
 }
 
-/* Font Styling */
+/* ========== Global Styles ========== */
 body {
 	font-family: 'Bodoni 72 Oldstyle', serif;
 	background-color: var(--light-gray);	/* Light gray background */
@@ -18,13 +18,43 @@ body {
 	padding: 0;
 }
 
-/* Sidebar Navigation */
+h1, h3, h2 {
+	font-family: 'Bodoni 72 Oldstyle', serif;
+}
+
+/* Header, Footer, and Section Styling */
+header, footer, .skills, .resume {
+	background-color: var(--primary-color);	/* French Colonial Blue */
+	color: var(--white-color);	/* White text */
+	border-radius: 15px;	/* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+	padding: 50px;
+	text-align: center;
+}
+
+footer, .skills, .resume {
+	padding: 50px;
+}
+
+header h1, .skills h2, .resume h2, footer {
+	font-size: 32px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+section {
+	padding: 40px 20px;
+	margin-bottom: 30px;  /* Adds space between sections */
+	background-color: var(--light-gray);  /* Ensure each section has a visible background */
+}
+
+/* ========== Sidebar Styling ========== */
 .sidebar {
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 200px;
-	height: 100vh;  /* Full viewport height */
+	height: 100vh;
 	background-color: var(--primary-color);	/* French Colonial Blue */
 	padding-top: 20px;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -58,16 +88,10 @@ body {
 .sidebar .icon {
 	width: 50px;
 	height: 50px;
-	font-size: 20px;
 	margin-right: 10px;
 }
 
-.content {
-	margin-left: 220px;	/* Ensure content doesn't overlap with the sidebar */
-	padding: 20px;
-}
-
-/* Responsive Sidebar */
+/* ========== Responsive Sidebar ========== */
 @media (max-width: 768px) {
 	.sidebar {
 		width: 100px;
@@ -82,116 +106,62 @@ body {
 	}
 }
 
-/* Headers */
-h1, h3 {
-	font-family: 'Bodoni 72 Oldstyle', serif;
-	color: var(--primary-color);		/* French Colonial Blue for headings */
-	margin-bottom: 15px;
-}
-
-h2 {
-	font-family: 'Bodoni 72 Oldstyle', serif;
-	color: var(--white-color);
-}
-
-/* Layout and Spacing */
-header {
-	text-align: center;
-	padding: 50px;
-	background-color: var(--primary-color);	/* Primary color for header */
-	color: var(--white-color);	/* White text in the header */
-	font-size: 20px;
-	font-weight: bold;
-	border-radius: 15px;	/* Rounded corners */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section {
-	padding: 40px 20px;
-}
-
-footer {
-	text-align: center;
+/* ========== Content Layout ========== */
+.content {
+	margin-left: 220px;	/* Ensure content doesn't overlap with the sidebar */
 	padding: 20px;
-	background-color: var(--primary-color);
-	color: var(--white-color);	/* White text in the footer */
-	border-radius: 15px;	/* Rounded corners */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About Section Styling */
+/* ========== About Section Styling ========== */
 .about {
-	padding: 50px;
-	background-color: var(--light-gray);
-}
-
-.about-content {
+	background-color: var(--white-color);  /* Different color for the About section */
+	border-radius: 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-}
-
-.bio {
-	flex: 1;
+	padding: 50px;
 }
 
 .bio h2 {
-	color: var(--primary-color);	/* French Colonial Blue for heading */
+	color: var(--primary-color);
 }
 
 .bio p {
-	color: var(--dark-gray);	/* Dark gray for the bio text */
 	font-size: 20px;
 	line-height: 1.6;
-}
-
-.photo {
-	flex: 1;
-	text-align: right;
+	color: var(--dark-gray);	/* Dark gray for the bio text */
 }
 
 .photo img {
 	max-width: 300px;	/* Adjust to your preference */
 	width: 100%;
-	border-radius: 50%;	/* Make sure the image remains circular */
+	border-radius: 50%;	/* Circular image */
 	border: 5px solid var(--primary-color);
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-	
 }
 
-/* Skills Section Styling */
-.skills {
-	padding: 50px;
-	background-color: var(--primary-color);	/* French Colonial Blue */
-	color: var(--white-color);	/* White text */
-	text-align: center;
-	border-radius: 15px;	/* Rounded corners */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.skills h2 {
-	font-size: 32px;
-	margin-bottom: 30px;
-}
-
-/* Skills Grid */
-.skills-grid {
+/* ========== Grid Layouts ========== */
+/* Shared Styles for Grid Layouts */
+.grid {
 	display: flex;
-	justify-content: center; /* Center the grid */
+	justify-content: center;
 	gap: 20px;
 	flex-wrap: wrap;
 }
 
-/* Individual Cards */
 .card {
-	background-color: var(--medium-gray);	/* Medium gray for card background */
+	background-color: var(--medium-gray);
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
-	width: 150px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 	transition: transform 0.3s ease;
+}
+
+/* Skills Grid */
+.skills-grid {
+	width: 150px;
 }
 
 .card img {
@@ -203,45 +173,21 @@ footer {
 .card p {
 	font-size: 16px;
 	font-weight: bold;
-	color: var(--dark-gray);		/* Dark gray text */
+	color: var(--dark-gray);	/* Dark gray text */
 }
 
-/* Hover Effect */
 .card:hover {
 	transform: translateY(-10px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);  /* Stronger shadow on hover */
 }
 
-/* Projects Section Styling */
-.projects {
-	padding: 50px;
-	background-color: var(--light-gray);
-	color: var(--primary-color);	/* White text */
-	text-align: center;
-}
-
-.projects h2 {
-	font-size: 32px;
-	margin-bottom: 30px;
-}
-
-/* Projects Grid */
+/* ========== Projects Grid Styling ========== */
 .projects-grid {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	flex-wrap: wrap;
+	/* Same styles for layout */
 }
 
-/* Individual Cards */
 .projects-grid .card {
-	background-color: var(--medium-gray);
-	border-radius: 10px;
-	padding: 20px;
-	text-align: center;
 	width: 250px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-	transition: transform 0.3 ease;
 }
 
 .projects-grid .card img {
@@ -250,18 +196,23 @@ footer {
 	margin-bottom: 10px;
 }
 
-.projects-grid .card p {
-	font-size: 16px;
-	font-weight: bold;
-	color: var(--dark-gray);
+/* ========== Resume Section Styling ========== */
+.resume-card {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
 }
 
-.projects-grid .card:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+.resume-card .card {
+	width: 200px;
 }
 
-/* Links and Hover Effects */
+.resume-card a {
+	text-decoration: none;	/* Remove underline from link */
+	color: inherit;	/* Inherit the color from the parent (dark gray) */
+}
+
+/* ========== Link Hover Effect ========== */
 a {
 	color: var(--primary-color);
 	text-decoration: none;
@@ -274,7 +225,7 @@ a:hover {
 	transition: color 0.3s ease;
 }
 
-/* Animations */
+/* ========== Animations ========== */
 .fade-in {
 	opacity: 0;
 	animation: fadeIn 2s forwards;
@@ -286,7 +237,7 @@ a:hover {
 	}
 }
 
-/* Responsive Design */
+/* ========== Responsive Design ========== */
 @media (max-width: 768px) {
 	body {
 		padding: 10px;
@@ -295,7 +246,7 @@ a:hover {
 	header {
 		padding: 20px;
 	}
-	
+
 	h1 {
 		font-size: 28px;
 	}
@@ -305,82 +256,3 @@ a:hover {
 	}
 }
 
-/* General Section Styling for Rounded Corners */
-section {
-    background-color: var(--light-gray);  /* Ensure each section has a visible background */
-    padding: 40px 20px;
-    margin-bottom: 30px;  /* Adds space between sections */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow for better visibility */
-}
-
-/* About Section - Optional customization */
-.about {
-    background-color: var(--white-color);  /* Different color for the About section */
-    border-radius: 15px;  /* Keep the same border-radius here */
-}
-
-/* Skills Section */
-.skills {
-    background-color: var(--primary-color);  /* Blue background */
-    border-radius: 15px;
-}
-
-/* Projects Section */
-.projects {
-    background-color: var(--light-gray);  /* Light gray background */
-    border-radius: 15px;
-}
-
-/* Resume Section Styling */
-.resume {
-	padding: 50px;
-	background-color: var(--primary-color);
-	color: var(--white-color;
-	text-align: center;
-	border-radius: 15px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Center the resume card */
-.resume-card {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-
-/* Individual Resume Card */
-.resume-card .card {
-	background-color: var(--medium-gray);
-	border-radius: 10px;
-	padding: 20px;
-	text-align: center;
-	width: 200px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-	transition: transform 0.3 ease;
-}
-
-/* Resume Card Image Styling */
-.resume-card .card img {
-	width: 100px;
-	height: 100px;
-	margin-bottom: 10px;
-}
-
-/* Resume Card Text Styling */
-.resume-card .card p {
-	font-size: 16px;
-	font-weight: bold;
-	color: var(--dark-gray);
-}
-
-/* Hoever Effect for Resume Card */
-.resume-card .card:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-/* Link Styling */
-.resume-card a {
-	text-decoration: none;	/* Remove underline from link */
-	color: inherit;	/* Inherit the color from the parent (dark gray) */
-}
