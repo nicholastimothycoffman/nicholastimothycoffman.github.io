@@ -209,6 +209,7 @@ footer {
 .projects {
 	padding: 50px;
 	background-color: var(--light-gray);
+	color: var(--white-color);	/* White text */
 	text-align: center;
 }
 
@@ -236,9 +237,21 @@ footer {
 	transition: transform 0.3 ease;
 }
 
+.projects-grid .card img {
+	width: 200px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.projects-grid .card p {
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--dark-gray);
+}
+
 .projects-grid .card:hover {
 	transform: translateY(-10px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Links and Hover Effects */
