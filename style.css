@@ -100,6 +100,10 @@ header {
 	padding: 50px;
 	background-color: var(--primary-color);	/* Primary color for header */
 	color: var(--white-color);	/* White text in the header */
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 15px;	/* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -111,6 +115,8 @@ footer {
 	padding: 20px;
 	background-color: var(--primary-color);
 	color: var(--white-color);	/* White text in the footer */
+	border-radius: 15px;	/* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* About Section Styling */
@@ -161,6 +167,8 @@ footer {
 	background-color: var(--primary-color);	/* French Colonial Blue */
 	color: var(--white-color);	/* White text */
 	text-align: center;
+	border-radius: 15px;	/* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skills h2 {
@@ -302,7 +310,6 @@ a:hover {
 section {
     background-color: var(--light-gray);  /* Ensure each section has a visible background */
     padding: 40px 20px;
-    border-radius: 15px;  /* Adjust the border-radius as needed for rounder or less round corners */
     margin-bottom: 30px;  /* Adds space between sections */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow for better visibility */
 }
