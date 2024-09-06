@@ -285,3 +285,30 @@ a:hover {
 	}
 }
 
+/* General Section Styling for Rounded Corners */
+section {
+    background-color: var(--light-gray);  /* Ensure each section has a visible background */
+    padding: 40px 20px;
+    border-radius: 15px;  /* Adjust the border-radius as needed for rounder or less round corners */
+    margin-bottom: 30px;  /* Adds space between sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow for better visibility */
+}
+
+/* About Section - Optional customization */
+.about {
+    background-color: var(--white-color);  /* Different color for the About section */
+    border-radius: 15px;  /* Keep the same border-radius here */
+}
+
+/* Skills Section */
+.skills {
+    background-color: var(--primary-color);  /* Blue background */
+    border-radius: 15px;
+}
+
+/* Projects Section */
+.projects {
+    background-color: var(--light-gray);  /* Light gray background */
+    border-radius: 15px;
+}
+
