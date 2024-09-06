@@ -149,6 +149,10 @@ footer {
 	max-width: 300px;	/* Adjust to your preference */
 	width: 100%;
 	border-radius: 50%;	/* Make sure the image remains circular */
+
+	/* Add border styling */
+	border: 5px solid var(--dark-gray);
+	padding: 5px;
 }
 
 /* Skills Section Styling */
