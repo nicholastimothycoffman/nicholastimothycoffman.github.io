@@ -216,7 +216,7 @@ footer {
 .projects {
 	padding: 50px;
 	background-color: var(--light-gray);
-	color: var(--white-color);	/* White text */
+	color: var(--primary-color);	/* White text */
 	text-align: center;
 }
 
@@ -331,3 +331,56 @@ section {
     border-radius: 15px;
 }
 
+/* Resume Section Styling */
+.resume {
+	padding: 50px;
+	background-color: var(--primary-color);
+	color: var(--white-color;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the resume card */
+.resume-card {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+/* Individual Resume Card */
+.resume-card .card {
+	background-color: var(--medium-gray);
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	width: 200px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3 ease;
+}
+
+/* Resume Card Image Styling */
+.resume-card .card img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+/* Resume Card Text Styling */
+.resume-card .card p {
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--dark-gray);
+}
+
+/* Hoever Effect for Resume Card */
+.resume-card .card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Link Styling */
+.resume-card a {
+	text-decoration: none;	/* Remove underline from link */
+	color: inherit;	/* Inherit the color from the parent (dark gray) */
+}
