@@ -145,8 +145,8 @@ section {
 /* Shared Styles for Grid Layouts */
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));	/* Create responsive grid with min 150px width per card */
-	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));	/* Create responsive grid with min 150px width per card */
+	justify-content: center;	/* Center the items within their columns */
 	gap: 20px;	/* Space between cards */
 	align-items: start;	/* Align items to the top */
 }
@@ -189,13 +189,20 @@ section {
 
 /* Skills Grid */
 .skills-grid {
-	/* Inherits from .grid */
-	padding: 0;	/* Remomve unnecessary padding */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));	/* Create responsive grid with a min width of 200px */
+	justify-items: center;	/* Center the cards within their grid cells */
+	gap: 20px;	/* Add spacing between cards */
+	padding: 20px;
 }
 
+/* Projects Grid */
 .projects-grid {
-	/* Inherits from .grid */
-	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));	/* Grid with larger cards */
+	justify-items: center;	/* Center the cards within the grid */
+	gap: 20px;	/* Add spacing between cards */
+	padding: 20px;
 }
 
 .projects-grid .card {
