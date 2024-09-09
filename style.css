@@ -256,3 +256,78 @@ a:hover {
 	}
 }
 
+/* ========== Contact Section ========== */
+.contact {
+	padding: 50px;
+	background-color: 
+	color: var();
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 50px;
+}
+
+/* Contact Form Styling */
+.contact h2 {
+	color: var();
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+/* Input Fields */
+.contact form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+.contact label {
+	align-self: flex-start;
+	font-size: 14px;
+	color: ();
+}
+
+.contact input, .contact textarea {
+	width: 100%;
+	max-width: 400px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color:
+	color:
+	font-size: 16px;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+	color: 
+}
+
+.contact textarea {
+	height: 100px;	/* Height for the message box */
+	resize: none;	/* Prevent resizing */
+}
+
+/* Send Button */
+.send-button {
+	padding: 10px 20px;
+	font-size: 16px;
+	color:
+	background-color: var(--primary-color);
+	border: 2px solid var(--primary-color);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.send-button:hover {
+	background-color: 
+	color: var(--primary-color);
+}
+
+.send-button .send-icon {
+	margin-left: 10px;	/* Space between the text and the icon */
+}
