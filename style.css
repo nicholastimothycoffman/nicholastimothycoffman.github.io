@@ -271,7 +271,7 @@ a:hover {
 /* ========== Contact Section ========== */
 .contact {
 	padding: 50px;
-	background-color: 
+	background-color: var(
 	color: var();
 	text-align: center;
 	border-radius: 15px;
@@ -281,38 +281,51 @@ a:hover {
 
 /* Contact Form Styling */
 .contact h2 {
-	color: var();
+	color: var(--white-color);
 	font-size: 32px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
+/* Contact Form Styling as a Card */
+.contact-card {
+	background-color: var(--medium-gray);	/* Card background color */
+	border-radius: 10px;	/* Rounded corners */
+	padding: 30px;
+	max-width: 600px;	/* Centered width */
+	margin: 0 auto;		/* Center the card */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);	/* Card shadow */
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
 /* Input Fields */
-.contact form {
+.contact-card form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 15px;
+	gap: 20px;	/* Space between form groups */
 }
 
-.contact label {
-	align-self: flex-start;
+/* Form Groups */
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label {
 	font-size: 14px;
-	color: ();
+	margin-bottom: 5px;
+	color: var(--primary-color);
 }
 
 .contact input, .contact textarea {
-	width: 100%;
-	max-width: 400px;
 	padding: 10px;
 	border: none;
 	border-radius: 5px;
 	background-color:
 	color:
 	font-size: 16px;
-}
-
-.contact input::placeholder, .contact textarea::placeholder {
-	color: 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);	/* Light shadow for inputs */
 }
 
 .contact textarea {
@@ -324,7 +337,7 @@ a:hover {
 .send-button {
 	padding: 10px 20px;
 	font-size: 16px;
-	color:
+	color: var(--primary-volor);	/* Button text color */
 	background-color: var(--primary-color);
 	border: 2px solid var(--primary-color);
 	border-radius: 5px;
