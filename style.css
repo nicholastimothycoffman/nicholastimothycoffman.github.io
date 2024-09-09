@@ -144,10 +144,11 @@ section {
 /* ========== Grid Layouts ========== */
 /* Shared Styles for Grid Layouts */
 .grid {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(auto-fit minmax(150px, 1fr));	/* Create responsive grid with min 150px width per card */
 	justify-content: center;
-	gap: 20px;
-	flex-wrap: wrap;
+	gap: 20px;	/* Space between cards */
+	align-items: start;	/* Align items to the top */
 }
 
 .card {
@@ -159,9 +160,14 @@ section {
 	transition: transform 0.3s ease;
 }
 
-/* Skills Grid */
-.skills-grid {
-	width: 150px;
+/* Individual Cards */
+.card {
+	background-color: var(--medium-gray);
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
 }
 
 .card img {
@@ -178,16 +184,22 @@ section {
 
 .card:hover {
 	transform: translateY(-10px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);  /* Stronger shadow on hover */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);	/* Stronger shadow on hover */
 }
 
-/* ========== Projects Grid Styling ========== */
+/* Skills Grid */
+.skills-grid {
+	/* Inherits from .grid */
+	padding: 0;	/* Remomve unnecessary padding */
+}
+
 .projects-grid {
-	/* Same styles for layout */
+	/* Inherits from .grid */
+	padding: 0;
 }
 
 .projects-grid .card {
-	width: 250px;
+	width: 250px;	/* Width for larger cards in Projects */
 }
 
 .projects-grid .card img {
