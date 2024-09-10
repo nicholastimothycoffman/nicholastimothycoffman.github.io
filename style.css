@@ -249,12 +249,58 @@ section {
 
 .projects-grid .card {
 	width: 250px;	/* Width for larger cards in Projects */
+	background-color: var(--light-gray);
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
 }
 
-.projects-grid .card img {
-	width: 200px;
-	height: 100px;
+.projects-grid .card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.projects-grid .project-thumbnail {
+	width: 90%;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+
+.projects-grid .card h3 {
+	font-size: 20px;
 	margin-bottom: 10px;
+}
+
+.projects-grid .card p {
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: var(--dark-gray);
+}
+
+.tech-icons {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.tech-icons i {
+	font-size: 24px;
+	color: var(--primary-color);
+}
+
+.project-link {
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--primary-color);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.project-link:hover {
+	color: var(--dark-gray);
 }
 
 /* ========== Resume Section Styling ========== */
