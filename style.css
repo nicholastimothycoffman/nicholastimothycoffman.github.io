@@ -368,16 +368,17 @@ a:hover {
 
 .contact input, .contact textarea {
 	padding: 15px;
+	height: 50px;	/* Height of the input fields */
+	font-size: 22px;	/* Font size */
 	border: none;
 	border-radius: 5px;
 	background-color: var(--dark-gray);
 	color: var(--white-color);
-	font-size: 18px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);	/* Light shadow for inputs */
 }
 
 .contact textarea {
-	height: 100px;	/* Height for the message box */
+	height: 150px;	/* Height for the message box */
 	resize: none;	/* Prevent resizing */
 }
 
@@ -406,4 +407,21 @@ a:hover {
 	width: 20px;	/* Set the size of the paper plane icon */
 	height: auto;	/* Keep aspect ratio */
 	margin-left: 10px;	/* Space between the text and the icon */
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;	/* Center the icons */
+	gap: 20px;	/* Add space between icons */
+	margin-top: 20px;
+}
+
+.social media a {
+	text-decoration: none;
+}
+
+.social-icon, .social-media i {
+	width: 40px;
+	height: 40px;
+	color: var(--white-color);
 }
