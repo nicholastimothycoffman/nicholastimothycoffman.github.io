@@ -229,6 +229,7 @@ section {
 	font-size: 32px;
 	font-weight: bold;
 	text-align: center;
+	color: var(--primary-color);
 }
 
 /* Projects Grid */
