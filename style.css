@@ -76,7 +76,7 @@ section {
 
 .sidebar ul li a {
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
 	color: var(--white-color);	/* White text */
 	display: flex;
