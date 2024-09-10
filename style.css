@@ -213,6 +213,19 @@ section {
 	padding: 20px;
 }
 
+.projects {
+	padding: 40px 20px;
+	margin-bottom: 30px;
+	background-color: var(--light-gray);
+	text-align: center;
+}
+
+.projects h2 {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+}
+
 /* Projects Grid */
 .projects-grid {
 	display: grid;
