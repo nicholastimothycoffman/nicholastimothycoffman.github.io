@@ -123,6 +123,22 @@ section {
 	padding: 50px;
 }
 
+.about-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;	/* Ensure content wraps on smaller screens */
+	gap: 20px;
+}
+
+.bio {
+	flex: 1;	/* Take up as much space as possible on the left */
+}
+
+.photo {
+	flex-shrink: 0;	/* Ensure photo doesn't shrink */
+}
+
 .bio h2 {
 	color: var(--primary-color);
 }
