@@ -68,7 +68,10 @@ section {
 
 .sidebar ul li {
 	margin-bottom: 20px;
-	text-align: center;
+	text-align: center; /* Center the content horizonally */
+	display: flex;
+	flex-direction: column;	/* Stack the icon and text vertically */
+	align-items: center;	/* Center the icon and the text horizonally */
 }
 
 .sidebar ul li a {
@@ -76,9 +79,12 @@ section {
 	font-size: 12px;
 	font-weight: bold;
 	color: var(--white-color);	/* White text */
-	padding: 10px 0;
-	display: block;
+	display: flex;
+	flex-direction: column;	/* Stack icon and text vertically */
+	align-items: center;	/* Center the icon and text */
+	justify-content: center;	/* Center everything within the li */
 	transition: background-color 0.3s ease;
+	gap: 10px;	/* Add space between the icon and the text */
 }
 
 .sidebar ul li a:hover {
@@ -88,7 +94,7 @@ section {
 .sidebar .icon {
 	width: 50px;
 	height: 50px;
-	margin-right: 10px;
+	margin-right: 5px;	/* Add space between the icon and the text */
 }
 
 /* ========== Responsive Sidebar ========== */
