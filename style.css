@@ -249,7 +249,7 @@ section {
 
 .projects-grid .card {
 	width: 250px;	/* Width for larger cards in Projects */
-	background-color: var(--light-gray);
+	background-color: var(--medium-gray);
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
@@ -263,7 +263,7 @@ section {
 }
 
 .projects-grid .project-thumbnail {
-	width: 90%;
+	width: 100%;
 	border-radius: 8px;
 	margin-bottom: 15px;
 }
