@@ -394,7 +394,7 @@ a:hover {
 	border-radius: 10px;	/* Rounded corners */
 	padding: 30px;
 	max-width: 600px;	/* Centered width */
-	min-height: 400px;
+	min-height: 350px;
 	margin: 0 auto;		/* Center the card */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);	/* Card shadow */
 	display: flex;
@@ -482,7 +482,7 @@ a:hover {
 }
 
 .social-icon, .social-media i {
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	color: var(--white-color);
 }
