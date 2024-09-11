@@ -134,7 +134,8 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;	/* Ensure content wraps on smaller screens */
-	gap: 20px;
+	gap: 10px;
+	padding: 50px;
 }
 
 .bio {
