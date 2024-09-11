@@ -428,6 +428,7 @@ a:hover {
 .contact input, .contact textarea {
 	padding: 15px;
 	height: 70px;	/* Height of the input fields */
+	width: 70%;
 	font-size: 28px;	/* Font size */
 	border: none;
 	border-radius: 5px;
