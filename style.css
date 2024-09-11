@@ -239,14 +239,12 @@ section {
 }
 
 /* Projects Grid */
-@media (max-width: 600px) {
 .projects-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));	/* Grid with larger cards */
 	justify-items: center;	/* Center the cards within the grid */
 	gap: 20px;	/* Add spacing between cards */
 	padding: 20px;
-}
 }
 
 .projects-grid .card {
