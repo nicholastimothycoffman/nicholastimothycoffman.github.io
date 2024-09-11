@@ -394,7 +394,7 @@ a:hover {
 	border-radius: 10px;	/* Rounded corners */
 	padding: 30px;
 	max-width: 600px;	/* Centered width */
-	min-height: 350px;
+	min-height: 400px;
 	margin: 0 auto;		/* Center the card */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);	/* Card shadow */
 	display: flex;
@@ -425,8 +425,8 @@ a:hover {
 
 .contact input, .contact textarea {
 	padding: 15px;
-	height: 50px;	/* Height of the input fields */
-	font-size: 22px;	/* Font size */
+	height: 70px;	/* Height of the input fields */
+	font-size: 28px;	/* Font size */
 	border: none;
 	border-radius: 5px;
 	background-color: var(--dark-gray);
@@ -469,12 +469,12 @@ a:hover {
 .social-media {
 	display: flex;
 	justify-content: center;	/* Center the icons */
-	gap: 20px;	/* Add space between icons */
+	gap: 18px;	/* Add space between icons */
 	margin-top: 20px;
 }
 
 .social-media i {
-	font-size: 24px;
+	font-size: 30px;
 	color: var(--primary-color);
 
 .social-media a {
@@ -482,7 +482,7 @@ a:hover {
 }
 
 .social-icon, .social-media i {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 	color: var(--white-color);
 }
