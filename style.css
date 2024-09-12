@@ -11,6 +11,7 @@
 /* ========== Global Styles ========== */
 body {
 	font-family: 'Bodoni 72 Oldstyle', serif;
+	background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
 	background-color: var(--light-gray);	/* Light gray background */
 	color: var(--dark-gray);		/* Dark gray for text */
 	line-height: 1.6;
