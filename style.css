@@ -255,6 +255,8 @@ section {
 }
 
 .projects-grid .card {
+	display: flex;
+	overflow: hidden;
 	width: 300px;	/* Width for larger cards in Projects */
 	height: 400px;
 	background-color: var(--medium-gray);
@@ -294,10 +296,13 @@ section {
 .tech-icons {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	gap: 10px;
-	margin-bottom: auto;
+	margin-top: auto;
 	width: 50px;
 	height: 50px;
+	padding: 10px 0;
 }
 
 .tech-icon {
@@ -443,8 +448,10 @@ a:hover {
 	width: 90% !important;
 	max-width: 600px;
 	min-width: 300px;
-	font-size: 28px;	/* Font size */
+	font-size: 20px;	/* Font size */
 	border: none;
+	padding: 10px;
+	box-sizing: border-box;
 	border-radius: 5px;
 	background-color: var(--dark-gray);
 	color: var(--white-color);
