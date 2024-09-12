@@ -199,6 +199,10 @@ section {
 	transition: transform 0.3s ease;
 }
 
+.skills .card {
+	width: 200px;
+}
+
 .skills .card img {
 	width: 100px;
 	height: 100px;
