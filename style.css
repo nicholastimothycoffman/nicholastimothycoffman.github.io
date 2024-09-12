@@ -153,6 +153,7 @@ section {
 	margin: 0 auto 20px auto;	/* Center the element horizontally and add space below */
 	color: var(--primary-color);
 	font-size: 32px;
+	white-space: nowrap;
 }
 
 .bio p {
@@ -186,7 +187,6 @@ section {
 	text-align: center;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 	transition: transform 0.3s ease;
-	width: 200px;
 }
 
 /* Individual Cards */
@@ -249,7 +249,7 @@ section {
 }
 
 .projects-grid .card {
-	width: 250px;	/* Width for larger cards in Projects */
+	width: 300px;	/* Width for larger cards in Projects */
 	background-color: var(--medium-gray);
 	border-radius: 10px;
 	padding: 20px;
@@ -283,8 +283,6 @@ section {
 .tech-icons {
 	display: flex;
 	justify-content: center;
-	justify-align: center;
-	justify-items: center;
 	gap: 10px;
 	margin-bottom: 15px;
 	width: 50px;
@@ -325,7 +323,7 @@ section {
 }
 
 .resume-card .card {
-	width: 200px;
+	width: 300px;
 }
 
 .resume-card a {
@@ -431,7 +429,7 @@ a:hover {
 .contact input, .contact textarea {
 	padding: 15px;
 	height: 70px;	/* Height of the input fields */
-	width: 70%;
+	width: 90%;
 	font-size: 28px;	/* Font size */
 	border: none;
 	border-radius: 5px;
