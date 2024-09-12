@@ -251,6 +251,9 @@ section {
 .projects-grid .card {
 	width: 300px;	/* Width for larger cards in Projects */
 	background-color: var(--medium-gray);
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
@@ -284,7 +287,7 @@ section {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
-	margin-bottom: 15px;
+	margin-bottom: auto;
 	width: 50px;
 	height: 50px;
 }
