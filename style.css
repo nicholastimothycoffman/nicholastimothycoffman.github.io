@@ -126,7 +126,7 @@ section {
 
 /* ========== About Section Styling ========== */
 .about {
-	background-color: var(--light-gray);
+	background-color: transparent;
 	border-radius: 15px;
 	display: flex;
 	justify-content: space-between;
@@ -238,7 +238,7 @@ section {
 .projects {
 	padding: 40px 20px;
 	margin-bottom: 30px;
-	background-color: var(--light-gray);
+	background-color: transparent;
 	text-align: center;
 }
 
@@ -396,7 +396,7 @@ a:hover {
 /* ========== Contact Section ========== */
 .contact {
 	padding: 50px;
-	background-color: var(--light-gray);
+	background-color: transparent;
 	color: var(--primary-color);
 	text-align: center;
 	margin-bottom: 50px;
