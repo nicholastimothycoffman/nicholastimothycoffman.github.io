@@ -9,6 +9,10 @@
 }
 
 /* ========== Global Styles ========== */
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Bodoni 72 Oldstyle', serif;
 	background-image: url('images/FalguniBackground.png');
@@ -299,9 +303,7 @@ section {
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 10px;
-	margin-top: auto;
-	width: 50px;
-	height: 50px;
+	width: 100%;
 	padding: 10px 0;
 }
 
@@ -500,6 +502,7 @@ a:hover {
 .social-media i {
 	font-size: 30px;
 	color: var(--primary-color);
+}
 
 .social-media a {
 	text-decoration: none;
