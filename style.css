@@ -164,6 +164,7 @@ section {
 
 .bio p {
 	font-size: 20px;
+	font-weight: bold;
 	line-height: 1.6;
 	color: var(--dark-gray);	/* Dark gray for the bio text */
 }
@@ -263,7 +264,7 @@ section {
 	overflow: hidden;
 	width: 300px;	/* Width for larger cards in Projects */
 	height: 400px;
-	background-color: var(--medium-gray);
+	background-color: var(--primary-color);
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
@@ -294,7 +295,7 @@ section {
 .projects-grid .card p {
 	font-size: 16px;
 	margin-bottom: 15px;
-	color: var(--dark-gray);
+	color: var(--white-color);
 }
 
 .tech-icons {
@@ -320,7 +321,7 @@ section {
 .project-link {
 	font-size: 16px;
 	font-weight: bold;
-	color: var(--primary-color);
+	color: var(--dark-gray);
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
