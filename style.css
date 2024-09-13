@@ -513,3 +513,8 @@ a:hover {
 	height: 70px;
 	color: var(--white-color);
 }
+
+.primary-color-icon {
+    filter: brightness(0) invert(1) sepia(1) saturate(1000%) hue-rotate(180deg) brightness(90%);
+}
+
