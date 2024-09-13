@@ -11,7 +11,7 @@
 /* ========== Global Styles ========== */
 body {
 	font-family: 'Bodoni 72 Oldstyle', serif;
-	background-image: url('images/FulganiBackground.png');
+	background-image: url('images/FalguniBackground.png');
 	background-repeat: repeat;
 	background-color: var(--light-gray);	/* Light gray background */
 	color: var(--dark-gray);		/* Dark gray for text */
