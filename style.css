@@ -155,7 +155,6 @@ section {
 
 .bio h2 {
 	text-align: center;	/* Center the header */
-	width: 25%;	/* Set the width of the header to 25% of its container */
 	margin: 0 auto 20px auto;	/* Center the element horizontally and add space below */
 	color: var(--primary-color);
 	font-size: 32px;
