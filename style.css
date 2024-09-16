@@ -411,18 +411,16 @@ a:hover {
 
 /* Contact Form Styling as a Card */
 .contact-card {
-	background-color: var(--medium-gray);	/* Card background color */
-	border-radius: 10px;	/* Rounded corners */
-	padding: 30px;
-	max-width: 600px;	/* Centered width */
-	min-height: 400px;
-	margin: 0 auto;		/* Center the card */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);	/* Card shadow */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Class to reveal the section */
+.contact-card.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
 
 /* Input Fields */
 .contact-card form {
@@ -465,31 +463,64 @@ a:hover {
 	resize: none;	/* Prevent resizing */
 }
 
+/* Input Focus Effect */
+input:focus, textarea:focus {
+    	border: 2px solid var(--primary-color);
+    	background-color: #f9f9f9; /* Light background on focus */
+    	transition: all 0.3s ease;
+}
+
 /* Send Button */
 .send-button {
 	padding: 15px 30px;
 	font-size: 18px;
-	color: var(--dark-gray);	/* Button text color */
+	color: var(--white-color);	/* Button text color */
 	background-color: var(--primary-color);
-	border: 2px solid var(--primary-color);
+	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: background-color 0.3s ease, color 0.3s ease;
+	transition: transform 0.3s ease, background-color 0.3s ease;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	align-self: center;	/* Center the button within the card */
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
 }
 
 .send-button:hover {
+	transform: scale(1.05);	/* Slightly scale up on hover */
 	background-color: var(--dark-gray);
-	color: var(--primary-color);
 }
 
 .send-button .send-icon {
 	width: 20px;	/* Set the size of the paper plane icon */
 	height: auto;	/* Keep aspect ratio */
 	margin-left: 10px;	/* Space between the text and the icon */
+}
+
+/* Loading Spinner */
+.spinner {
+	width: 20px;
+	height: 20px;
+	border: 2px solid transparent;
+	border-radius: 50%;
+	border-top: 2px solid white;
+	margin-left: 10px;
+	animation: spin 1s linear infinite;
+}
+
+.spinner.hidden {
+	display: none;	/* Hide the spinner by default */
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .social-media {

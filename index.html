@@ -150,9 +150,14 @@
             			<div class="form-group">
                 			<textarea name="message" placeholder="Your Message" required></textarea>
             			</div>
-            			<button type="submit" class="send-button">Send</button>
+            			<button type="submit" class="send-button">
+                			Send
+                			<div class="spinner hidden"></div> <!-- Spinner for loading -->
+            			</button>
         		</form>
-    
+			
+	        	<div id="form-status-message"></div> <!-- To display feedback messages -->
+
     			<div class="social-media">
         			<a href="https://github.com/nicholastimothycoffman" target="_blank"><i class="fab fa-github"></i></a>
         			<a href="https://x.com/NicolCeannaiche" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
@@ -164,21 +169,6 @@
 	</section>	
 
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-	<script type="text/javascript">
-    		document.getElementById('contact-form').addEventListener('submit', function(event) {
-        		event.preventDefault(); // Prevent form from submitting the usual way
-
-        		// Replace YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_USER_ID with actual values from your EmailJS account
-        		emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-            			.then(function() {
-                			alert('SUCCESS!');
-            			}, function(error) {
-                			alert('FAILED...', error);
-            			});
-    			});
-	</script>
-
 
 	<!-- Link to your JavaScript file -->
 	<script src="script.js"></script>
