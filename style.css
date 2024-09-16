@@ -15,13 +15,24 @@
 
 body {
 	font-family: 'Bodoni 72 Oldstyle', serif;
-	background-image: url('images/FrenchStyleBackground.png');
-	background-repeat: repeat;
-	background-color: var(--light-gray);	/* Light gray background */
 	color: var(--dark-gray);		/* Dark gray for text */
-	line-height: 1.6;
-	margin: 0;
-	padding: 0;
+	background: radial-gradient(circle, rgba(240,240,240,1) 0%, rbga(220,220,220,1) 100%);
+}
+
+.dynamic-background {
+	background-image: url('images/FrenchStyleBackground.png');
+	background-size: 150px 150px;
+	background-position: center;
+	background-attachment: fixed;	/* Creates parallax effect */
+}
+
+@keyframes slow-shift {
+    	0% { background-position: 0 0; }
+    	100% { background-position: 150px 150px; } /* Slow animation movement */
+}
+
+body {
+    animation: slow-shift 15s linear infinite;
 }
 
 h1, h3, h2 {
