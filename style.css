@@ -24,6 +24,8 @@ body {
 	background-size: 150px 150px;
 	background-position: center;
 	background-attachment: fixed;	/* Creates parallax effect */
+	background: radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(220,220,220,1) 100%);
+    	animation: slow-shift 15s linear infinite;
 }
 
 @keyframes slow-shift {
@@ -48,6 +50,20 @@ header, footer, .skills, .resume {
 	padding: 50px;
 	text-align: center;
 }
+
+/* General fade-in class for any section */
+.fade-in-section {
+    	opacity: 0;
+    	transform: translateY(20px);
+    	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Class to reveal the section */
+.fade-in-section.visible {
+    	opacity: 1;
+    	transform: translateY(0);
+}
+
 
 footer, .skills, .resume {
 	padding: 50px;
@@ -146,17 +162,6 @@ section {
 	padding: 50px;
 }
 
-/* General fade-in class for any section */
-.fade-in-section {
-    	opacity: 0;
-    	transform: translateY(20px);
-    	transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Class to reveal the section */
-.fade-in-section.visible {
-    	opacity: 1;
-    	transform: translateY(0);
 }
 
 .about-content {
@@ -233,20 +238,6 @@ section {
 	width: 200px;
 }
 
-/* General fade-in class for any section */
-.fade-in-section {
-    	opacity: 0;
-    	transform: translateY(20px);
-    	transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Class to reveal the section */
-.fade-in-section.visible {
-    	opacity: 1;
-    	transform: translateY(0);
-}
-
-
 .skills .card img {
 	width: 100px;
 	height: 100px;
@@ -278,19 +269,6 @@ section {
 	margin-bottom: 30px;
 	background-color: transparent;
 	text-align: center;
-}
-
-/* General fade-in class for any section */
-.fade-in-section {
-    	opacity: 0;
-    	transform: translateY(20px);
-    	transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Class to reveal the section */
-.fade-in-section.visible {
-    	opacity: 1;
-    	transform: translateY(0);
 }
 
 .projects h2 {
@@ -386,20 +364,6 @@ section {
 	justify-content: center;
 	margin-top: 20px;
 }
-
-/* General fade-in class for any section */
-.fade-in-section {
-    	opacity: 0;
-    	transform: translateY(20px);
-    	transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Class to reveal the section */
-.fade-in-section.visible {
-    	opacity: 1;
-    	transform: translateY(0);
-}
-
 
 .resume h2 {
 	color: var(--white-color);
