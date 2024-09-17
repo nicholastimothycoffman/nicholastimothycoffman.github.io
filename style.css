@@ -35,6 +35,7 @@ body {
 
 h1, h3, h2 {
 	font-family: 'Bodoni 72 Oldstyle', serif;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Header, Footer, and Section Styling */
@@ -69,6 +70,7 @@ header h1, .skills h2, .resume h2, footer {
 	font-size: 32px;
 	margin-bottom: 30px;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -189,6 +191,7 @@ section {
 	color: var(--primary-color);
 	font-size: 32px;
 	white-space: nowrap;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .bio p {
@@ -196,6 +199,7 @@ section {
 	font-weight: bold;
 	line-height: 1.6;
 	color: var(--dark-gray);	/* Dark gray for the bio text */
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .photo img {
