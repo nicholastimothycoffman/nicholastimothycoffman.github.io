@@ -35,7 +35,7 @@ body {
 
 h1, h3, h2 {
 	font-family: 'Bodoni 72 Oldstyle', serif;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Header, Footer, and Section Styling */
@@ -199,7 +199,18 @@ section {
 	font-weight: bold;
 	line-height: 1.6;
 	color: var(--dark-gray);	/* Dark gray for the bio text */
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+	
+}
+
+/* Drop caps for the first letter of the bio text */
+.bio p:first-letter {
+    	font-size: 3rem; /* Increase the size of the first letter */
+    	font-weight: bold; /* Make it bold */
+    	float: left; /* Align the letter to the left */
+    	margin-right: 8px; /* Add some space between the letter and the text */
+    	line-height: 1; /* Adjust the line height */
+    	color: var(--primary-color); /* Optional: Color the first letter */
 }
 
 .photo img {
