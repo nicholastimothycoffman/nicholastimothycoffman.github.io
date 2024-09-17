@@ -155,7 +155,6 @@ section {
 	display: flex;
 	flex-direction: row;
     	justify-content: space-between;
-    	align-items: center;
     	padding: 50px;
     	background-color: transparent;
     	border-radius: 15px;
@@ -171,7 +170,6 @@ section {
 	display: flex;
 	flex-direction: row;	/* This ensures the bio and the photo are in a row */
 	justify-content: space-between;
-	align-items: center;
 	flex-wrap: nowrap;	/* Ensure the content does not wrap */
 	gap: 10px;
 	width: 100%;	/* Make sure it takes the full width of the section */
