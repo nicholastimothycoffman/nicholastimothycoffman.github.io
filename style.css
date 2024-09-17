@@ -155,6 +155,7 @@ section {
 	display: flex;
 	flex-direction: row;
     	justify-content: space-between;
+	align-items: center;
     	padding: 50px;
     	background-color: transparent;
     	border-radius: 15px;
@@ -177,12 +178,14 @@ section {
 
 .bio {
 	flex: 1;	/* Take up as much space as possible on the left */
-	max-width: 60%;	/* Limit the bio to occupy up to 50% of the width of the section */
+	max-width: 50%;	/* Limit the bio to occupy up to 50% of the width of the section */
+	text-align: left;
 }
 
 .photo {
 	flex-shrink: 0;	/* Ensure photo doesn't shrink */
 	max-width: 300px;	/* Ensure a maximum width for photo */
+	text-align: right;
 }
 
 .bio h2 {
