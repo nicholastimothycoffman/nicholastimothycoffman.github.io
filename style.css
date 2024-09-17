@@ -16,7 +16,7 @@
 body {
 	font-family: 'Bodoni 72 Oldstyle', serif;
 	color: var(--dark-gray);		/* Dark gray for text */
-	background: radial-gradient(circle, rgba(240,240,240,1) 0%, rbga(220,220,220,1) 100%);
+	background: radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(220,220,220,1) 100%);
 }
 
 .dynamic-background {
