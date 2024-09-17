@@ -185,7 +185,7 @@ section {
 .photo {
 	flex-shrink: 0;	/* Ensure photo doesn't shrink */
 	max-width: 300px;	/* Ensure a maximum width for photo */
-	text-align: right;
+	align-items: right;
 }
 
 .bio h2 {
