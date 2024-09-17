@@ -162,6 +162,7 @@ section {
 
 .about-content {
 	display: flex;
+	flex-direction: row;	/* This ensures the bio and the photo are in a row */
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;	/* Ensure content wraps on smaller screens */
