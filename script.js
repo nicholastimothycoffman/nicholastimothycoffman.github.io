@@ -51,3 +51,24 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', checkVisibility);
 });
 
+// Function to handle the fade-in effect on scroll
+function handleScrollAnimation() {
+    const fadeInSections = document.querySelectorAll('.fade-in-section');
+
+    fadeInSections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        // Add the 'visible' class when the section enters the viewport
+        if (sectionTop < windowHeight - 100) {
+            section.classList.add('visible');
+        }
+    });
+}
+
+// Add the scroll event listener
+window.addEventListener('scroll', handleScrollAnimation);
+
+// Trigger the function on page load in case some sections are already in view
+handleScrollAnimation();
+
