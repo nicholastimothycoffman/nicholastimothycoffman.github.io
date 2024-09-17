@@ -149,13 +149,14 @@ section {
 
 /* ========== About Section Styling ========== */
 .about {
-	background-color: transparent;
-	border-radius: 15px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 20px;
-	padding: 50px;
+    	flex-direction: row; /* Make sure the flex direction is row, so elements are aligned horizontally */
+    	justify-content: space-between;
+    	align-items: center;
+    	padding: 50px;
+    	background-color: transparent;
+    	border-radius: 15px;
+    	gap: 20px;
 }
 
 }
@@ -165,9 +166,9 @@ section {
 	flex-direction: row;	/* This ensures the bio and the photo are in a row */
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;	/* Ensure content wraps on smaller screens */
+	flex-wrap: nowrap;	/* Ensure the content does not wrap */
 	gap: 10px;
-	padding: 50px;
+	width: 100%;	/* Make sure it takes the full width of the section */
 }
 
 .bio {
@@ -177,6 +178,8 @@ section {
 
 .photo {
 	flex-shrink: 0;	/* Ensure photo doesn't shrink */
+	max-width: 300px;	/* Control the size of the image */
+	width: 100%;
 }
 
 .bio h2 {
@@ -195,8 +198,6 @@ section {
 }
 
 .photo img {
-	max-width: 300px;	/* Adjust to your preference */
-	width: 100%;
 	border-radius: 50%;	/* Circular image */
 	border: 5px solid var(--primary-color);
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
