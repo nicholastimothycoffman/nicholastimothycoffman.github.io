@@ -146,6 +146,19 @@ section {
 	padding: 50px;
 }
 
+/* General fade-in class for any section */
+.fade-in-section {
+    	opacity: 0;
+    	transform: translateY(20px);
+    	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Class to reveal the section */
+.fade-in-section.visible {
+    	opacity: 1;
+    	transform: translateY(0);
+}
+
 .about-content {
 	display: flex;
 	justify-content: space-between;
@@ -220,6 +233,20 @@ section {
 	width: 200px;
 }
 
+/* General fade-in class for any section */
+.fade-in-section {
+    	opacity: 0;
+    	transform: translateY(20px);
+    	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Class to reveal the section */
+.fade-in-section.visible {
+    	opacity: 1;
+    	transform: translateY(0);
+}
+
+
 .skills .card img {
 	width: 100px;
 	height: 100px;
@@ -251,6 +278,19 @@ section {
 	margin-bottom: 30px;
 	background-color: transparent;
 	text-align: center;
+}
+
+/* General fade-in class for any section */
+.fade-in-section {
+    	opacity: 0;
+    	transform: translateY(20px);
+    	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Class to reveal the section */
+.fade-in-section.visible {
+    	opacity: 1;
+    	transform: translateY(0);
 }
 
 .projects h2 {
@@ -346,6 +386,20 @@ section {
 	justify-content: center;
 	margin-top: 20px;
 }
+
+/* General fade-in class for any section */
+.fade-in-section {
+    	opacity: 0;
+    	transform: translateY(20px);
+    	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Class to reveal the section */
+.fade-in-section.visible {
+    	opacity: 1;
+    	transform: translateY(0);
+}
+
 
 .resume h2 {
 	color: var(--white-color);
