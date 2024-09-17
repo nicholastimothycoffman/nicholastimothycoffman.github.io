@@ -179,7 +179,7 @@ section {
 .photo {
 	flex-shrink: 0;	/* Ensure photo doesn't shrink */
 	max-width: 100px;	/* Control the size of the image */
-	width: 100%;
+	width: 100px;
 }
 
 .bio h2 {
