@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize EmailJS
-    emailjs.init("YOUR_USER_ID");
+    emailjs.init("8kca2DUrQeO2ggSm3");
 
     // Add event listener to the form submission
     document.getElementById('contact-form').addEventListener('submit', function (event) {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spinner.classList.remove('hidden');
 
         // Send form using EmailJS
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        emailjs.sendForm('service.6oldg0m', 'template_rkec7c2', this)
             .then(function () {
                 spinner.classList.add('hidden'); // Hide spinner
                 showFeedbackMessage('Form successfully sent!', 'success');
