@@ -165,7 +165,15 @@ section {
 	overflow: hidden;
 }
 
-}
+.about-card {
+	background-color: var(--medium-gray);
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	border: 5px solid var(--primary-color);
+	max-width: 50%;
+	margin: 0;
+	
 
 .about-content {
 	display: flex;
@@ -185,7 +193,7 @@ section {
 .photo {
 	flex-shrink: 0;	/* Ensure photo doesn't shrink */
 	max-width: 300px;	/* Ensure a maximum width for photo */
-	align-items: right;
+	margin-left: auto;
 }
 
 .bio h2 {
