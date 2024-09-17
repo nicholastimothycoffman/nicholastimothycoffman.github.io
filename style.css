@@ -43,7 +43,7 @@ header, footer, .skills, .resume {
 	background-color: var(--primary-color);	/* French Colonial Blue */
 	color: var(--white-color);	/* White text */
 	border-radius: 15px;	/* Rounded corners */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
 	padding: 50px;
 	text-align: center;
 }
