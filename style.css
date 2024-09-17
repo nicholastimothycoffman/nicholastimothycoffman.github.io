@@ -178,7 +178,7 @@ section {
 
 .photo {
 	flex-shrink: 0;	/* Ensure photo doesn't shrink */
-	max-width: 300px;	/* Control the size of the image */
+	max-width: 100px;	/* Control the size of the image */
 	width: 100%;
 }
 
@@ -438,7 +438,7 @@ a:hover {
 
 /* Contact Form Styling as a Card */
 .contact-card {
-	background-color: var(--medium-gray);
+	background-color: var(--primary-color);
 	border-radius: 15px;	/* Rounded corners */
 	padding: 40px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);	/* Subtle shadow */
@@ -506,7 +506,7 @@ input:focus, textarea:focus {
 	padding: 15px 30px;
 	font-size: 18px;
 	color: var(--white-color);	/* Button text color */
-	background-color: var(--primary-color);
+	background-color: var(--medium-gray);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -573,7 +573,7 @@ input:focus, textarea:focus {
 .social-icon, .social-media i {
 	width: 70px;
 	height: 70px;
-	color: var(--white-color);
+	color: var(--dark-gray);
 }
 
 .primary-color-icon {
