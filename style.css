@@ -145,18 +145,21 @@ section {
 .content {
 	margin-left: 220px;	/* Ensure content doesn't overlap with the sidebar */
 	padding: 20px;
+	width: calc(100% - 220px);	/* Ensure the content takes full width minus the sidebar */
 }
 
 /* ========== About Section Styling ========== */
 .about {
 	display: flex;
-    	flex-direction: row; /* Make sure the flex direction is row, so elements are aligned horizontally */
     	justify-content: space-between;
     	align-items: center;
     	padding: 50px;
     	background-color: transparent;
     	border-radius: 15px;
     	gap: 20px;
+	width: 100%;	/* Make sure the about section takes full width */
+	max-width: 100%;	/* Ensures it doesn't shrink below a certain width */
+	overflow: hidden;
 }
 
 }
@@ -197,6 +200,7 @@ section {
 
 .photo img {
 	max-width: 300px;
+	min-width: 200px;
 	width: auto;
 	border-radius: 50%;	/* Circular image */
 	border: 5px solid var(--primary-color);
