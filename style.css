@@ -173,6 +173,7 @@ section {
 	border: 5px solid var(--primary-color);
 	max-width: 50%;
 	margin: 0;
+	align-text: center;
 	
 
 .about-content {
