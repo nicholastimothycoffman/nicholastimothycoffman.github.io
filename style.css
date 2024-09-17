@@ -437,6 +437,13 @@ a:hover {
 
 /* Contact Form Styling as a Card */
 .contact-card {
+	background-color: var(--medium-gray);
+	border-radius: 15px;	/* Rounded corners */
+	padding: 40px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);	/* Subtle shadow */
+	max-width: 500px;	/* Optional: limit the width of the card */
+	margin: 0 auto;	/* Center the card horizontally */
+	text-align: center;	
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 0.8s ease, transform 0.8s ease;
@@ -471,13 +478,10 @@ a:hover {
 .contact input, .contact textarea {
 	padding: 15px;
 	height: 70px;	/* Height of the input fields */
-	width: 90% !important;
-	max-width: 600px;
-	min-width: 300px;
+	width: 100%;
+	max-width: 100%;
 	font-size: 20px;	/* Font size */
 	border: none;
-	padding: 10px;
-	box-sizing: border-box;
 	border-radius: 5px;
 	background-color: var(--dark-gray);
 	color: var(--white-color);
