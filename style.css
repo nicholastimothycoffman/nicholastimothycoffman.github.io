@@ -25,17 +25,12 @@ body {
 	background-size: 150px 150px;
 	background-position: center;
 	background-attachment: fixed;	/* Creates parallax effect */
-	background: radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(220,220,220,1) 100%);
     	animation: slow-shift 15s linear infinite;
 }
 
 @keyframes slow-shift {
     	0% { background-position: 0 0; }
     	100% { background-position: 150px 150px; } /* Slow animation movement */
-}
-
-body {
-    animation: slow-shift 15s linear infinite;
 }
 
 h1, h3, h2 {
