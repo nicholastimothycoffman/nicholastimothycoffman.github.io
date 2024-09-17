@@ -442,7 +442,7 @@ a:hover {
 	border-radius: 15px;	/* Rounded corners */
 	padding: 40px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);	/* Subtle shadow */
-	max-width: 500px;	/* Optional: limit the width of the card */
+	max-width: 600px;	/* Optional: limit the width of the card */
 	margin: 0 auto;	/* Center the card horizontally */
 	text-align: center;	
 	opacity: 0;
