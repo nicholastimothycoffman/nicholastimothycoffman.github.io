@@ -173,7 +173,7 @@ section {
 
 .bio {
 	flex: 1;	/* Take up as much space as possible on the left */
-	max-width: 50%;	/* Limit the bio to occupy up to 50% of the width of the section */
+	max-width: 60%;	/* Limit the bio to occupy up to 50% of the width of the section */
 }
 
 .photo {
