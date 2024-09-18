@@ -193,12 +193,12 @@ header h1, .skills h2, .resume h2, footer {
 
 .photo {
 	flex-shrink: 0;	/* Ensure photo doesn't shrink */
-	max-width: 350px;	/* Ensure a maximum width for photo */
+	max-width: 400px;	/* Ensure a maximum width for photo */
 	margin-left: auto;
 }
 
 .photo img {
-        max-width: 350px;
+        max-width: 400px;
         min-width: 200px;
         width: auto;
         border-radius: 50%;     /* Circular image */
