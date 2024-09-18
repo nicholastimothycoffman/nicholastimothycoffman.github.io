@@ -193,8 +193,17 @@ header h1, .skills h2, .resume h2, footer {
 
 .photo {
 	flex-shrink: 0;	/* Ensure photo doesn't shrink */
-	max-width: 300px;	/* Ensure a maximum width for photo */
+	max-width: 350px;	/* Ensure a maximum width for photo */
 	margin-left: auto;
+}
+
+.photo img {
+        max-width: 350px;
+        min-width: 200px;
+        width: auto;
+        border-radius: 50%;     /* Circular image */
+        border: 5px solid var(--primary-color);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .bio h2 {
@@ -221,15 +230,6 @@ header h1, .skills h2, .resume h2, footer {
     	margin-right: 8px; /* Add some space between the letter and the text */
     	line-height: 1; /* Adjust the line height */
     	color: var(--primary-color); /* Optional: Color the first letter */
-}
-
-.photo img {
-	max-width: 300px;
-	min-width: 200px;
-	width: auto;
-	border-radius: 50%;	/* Circular image */
-	border: 5px solid var(--primary-color);
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ========== Grid Layouts ========== */
