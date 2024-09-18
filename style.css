@@ -173,7 +173,7 @@ section {
 	border: 5px solid var(--primary-color);
 	max-width: 50%;
 	margin: 0;
-	align-text: center;
+	text-align: center;
 }	
 
 .about-content {
@@ -183,6 +183,7 @@ section {
 	flex-wrap: nowrap;	/* Ensure the content does not wrap */
 	gap: 10px;
 	width: 100%;	/* Make sure it takes the full width of the section */
+	align-items: center;
 }
 
 .bio {
